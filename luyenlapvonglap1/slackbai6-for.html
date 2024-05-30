@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Bài 6: Nhập vào hai số nguyên dương a và b. Tìm tổng của tất cả các số lẻ và chẵn nằm giữa hai số đó.
+    <script>
+        let a = +prompt("Nhập a");
+        let b = +prompt("Nhập b");
+        let even = 0;
+        let odd = 0;
+        for (let i = a; i <= b; i++) {
+            if (i % 2 == 0) {
+                even += i;
+            } else {
+                odd += i;
+            }
+        }
+        console.log("Tổng số chẳn = " + even);
+        console.log("Tổng số lẻ = " + odd);
+
+
+    </script>
+</body>
+
+</html>

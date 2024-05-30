@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Tính Tổng các số chia 5 dư 2 từ a đến b.
+    <script>
+        let a = +prompt("Nhập số a");
+        let b = +prompt("Nhập số b");
+        let tong = 0;
+        for (let i = a; i <= b; i++) {
+            if (i % 5 == 2) {
+                console.log(i);
+                tong += i;
+            }
+        }
+        tong -= a + 1;
+        console.log("Tổng là " + tong);
+    </script>
+</body>
+
+</html>

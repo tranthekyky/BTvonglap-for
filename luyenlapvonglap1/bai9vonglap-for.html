@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Game đoán số từ 1- 10 , đc ba lần đoán </h3>
+    <input type="button" value="Chơi" onclick="clickHere()">
+    <p id="result"></p>
+    <script>
+        function clickHere() {
+            let so = +prompt("Nhập số của bạn ");
+            let so_random = Math.floor(Math.random() * 5) + 1;
+            console.log(so_random);
+            let inturn = 1;
+            while (inturn <= 3) {
+                inturn++;
+                if (so !== so_random) {
+                    alert("Hãy thử lại !");
+                    so = +prompt("Nhập lại số");
+                } else if (so == so_random) {
+                    alert("Xin chúc mừng");
+                    break;
+                }
+                if (inturn == 3) {
+                    alert("Đã hết lượt chơi!!");
+                    break;
+
+                }
+            }
+
+
+
+        }
+
+
+
+        // document.getElementById("result").innerHTML = " Đã hêt số lần thử !! ";
+
+
+
+
+    </script>
+
+</body>
+
+</html>

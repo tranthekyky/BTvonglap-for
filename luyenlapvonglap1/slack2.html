@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    In ra các số từ a đến b số chẵn trong h2, so le trong h1;
+    <h1 id="odd"></h1>
+    <h2 id="even"></h2>
+    <script>
+        let a = +prompt("Nhập a");
+        let b = +prompt("Nhập b");
+        let odd = "";
+        let even = "";
+        for (let i = a; i <= b; i++) {
+            if (i % 2 == 0) {
+                even += i + ",";
+                document.getElementById("even").innerHTML = " Số chẳn :" + even;
+            } else {
+                odd += i + ",";
+                document.getElementById("odd").innerHTML = " Số lẻ :" + odd;
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>

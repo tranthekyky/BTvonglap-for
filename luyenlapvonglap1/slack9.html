@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Đếm các số chia 5 dư 2 từ a đến b
+    <script>
+        let a = +prompt("Nhập số a");
+        let b = +prompt("Nhập số b");
+        let dem = 0;
+        for (let i = a; i <= b; i++) {
+            console.log(i);
+            if (i % 5 === 2) {
+                console.log(i + " Là số chia hêt cho 5 dư 2");
+                dem++;
+            }
+        }
+        console.log(" Có " + dem + " số chia hết cho 5 dư 2 từ a đến b ");
+    </script>
+</body>
+
+</html>
